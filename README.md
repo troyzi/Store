@@ -1,2 +1,0 @@
-# Store
-build-swtore-react
