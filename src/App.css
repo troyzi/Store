@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.myDivs{
+  height: 100px;
+  width: 100px;
+}
+
+.afterClick{
+  background-color: palegreen;
+  border: 10px rgb(39, 45, 101) solid;
+  background-image: url('');
+}
