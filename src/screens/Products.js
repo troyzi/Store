@@ -8,7 +8,6 @@ import ProductCard from "../components/ProductCard";
 const Products = () => {
   const params = useParams();
   const { category } = params;
-
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -26,16 +25,14 @@ const Products = () => {
         setData(res);
       } catch (err) {
         console.log(err);
-      } finally {
-        setLoading(false);
-      }
+  } finally {
+        setLoading(false); }
     };
     fetchData();
   }, [category]);
 
   if (loading) {
-    return <h1 className="text-center">Loading ...</h1>;
-  }
+    return <h1 className="text-center">Loading ...</h1>;  }
 
   return (
     <div className="container p-5">
@@ -43,19 +40,12 @@ const Products = () => {
       <div className="container">
         {data.length === 0 && <h3 className="text-center">No Product Found</h3>}
         <div className="row mt-2 g-4">
-          {data &&
-            data.map((product, index) => (
+          {data && data.map((product, index) => (
               <ProductCard
                 data={data}
                 setData={setData}
                 key={index}
-                product={product}
-              />
-            ))}
-        </div>
-      </div>
-    </div>
-  );
+                product={product} /> ))} </div </div> </div> );
 };
 
 export default Products;
