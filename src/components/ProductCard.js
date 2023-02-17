@@ -71,10 +71,7 @@ const ProductCard = ({ product, setData, data }) => {
     } else {
       setFormData({
         ...formData,
-        isInStock: true,
-      });
-    }
-  };
+        isInStock: true, });    };
   return (
     <>
       <div className="card col-md-4 ">
@@ -87,8 +84,7 @@ const ProductCard = ({ product, setData, data }) => {
               height: "200px",
               objectFit: "contain",
             }}
-            alt={"pic"}
-          />
+            alt={"pic"} />
         </div>
         <div className="central-div">
           <h3 className="text-center">{product.name}</h3>
@@ -99,37 +95,28 @@ const ProductCard = ({ product, setData, data }) => {
             onClick={() => {
               navigate("/product/details", {
                 state: { details: formData },
-              });
-            }}
-          >
+              }); }} >
             View
           </button>
           <button
             className="mx-2 w-100 btn btn-primary"
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
+            data-bs-target="#exampleModal" >
             Edit
           </button>
           <button
             disabled={delLoading}
             className={`mx-2 w-100 btn btn-primary ${
-              delLoading && "opacity-50"
-            }`}
-            onClick={handleDelete}
-          >
-            Delete
-          </button>
-        </div>
-      </div>
+              delLoading && "opacity-50"  }`}
+            onClick={handleDelete}  >
+            Delete  </button> </div> </div>
       <div
         class="modal fade"
         id="exampleModal"
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
+        aria-hidden="true"  >
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
@@ -138,8 +125,7 @@ const ProductCard = ({ product, setData, data }) => {
                 type="button"
                 className="btn-close"
                 data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
+                aria-label="Close  ></button>
             </div>
             <div className="modal-body">
               <form onSubmit={handleUpdate}>
@@ -153,13 +139,11 @@ const ProductCard = ({ product, setData, data }) => {
                       onChange={(e) => {
                         setFormData({
                           ...formData,
-                          name: e.target.value,
-                        });
+                          name: e.target.value,  });
                       }}
                       type="text"
                       id="form1Example1"
-                      className="form-control"
-                    />
+                      className="form-control" />
                   </div>
                   <div className="form-outline w-100 m-2 mb-2">
                     <label className="form-label" htmlFor="form1Example2">
@@ -175,8 +159,7 @@ v                  PICTURE
                       }}
                       type="text"
                       id="form1Example2"
-                      className="form-control"
-                    />
+                      className="form-control" />
 
                     {formData.image && (
                       <div className="d-flex align-items-center">
@@ -185,12 +168,9 @@ v                  PICTURE
                           src={formData.image}
                           width={70}
                           height={70}
-                          alt={"preview"}
-                        />
-                      </div>
-                    )}
-                  </div>
-                </div>
+                          alt={"preview"}/>
+                      </div> )}
+                  </div>   </div>
                 <div className="d-flex">
                   <div className="form-outline w-100  m-2 mb-2">
                     <label className="form-label" htmlFor="form1Example1">
@@ -201,13 +181,11 @@ v                  PICTURE
                       onChange={(e) => {
                         setFormData({
                           ...formData,
-                          price: e.target.value,
-                        });
+                          price: e.target.value, });
                       }}
                       type="number"
                       id="form1Example1"
-                      className="form-control"
-                    />
+                      className="form-control" />
                   </div>
                   <div className="form-outline w-100 m-2 mb-2">
                     <label className="form-label" htmlFor="form1Example2">
@@ -217,22 +195,18 @@ v                  PICTURE
                       onChange={(e) => {
                         setFormData({
                           ...formData,
-                          category: e.target.value,
-                        });
+                          category: e.target.value,  });
                       }}
                       value={formData.category}
                       className="form-select"
-                      aria-label="Default select example"
-                    >
+                      aria-label="Default select example"  >
                       <option defaultValue value={""}>
                         Select Category
                       </option>
                       <option value="Xbox">Xbox</option>
                       <option value="Playstation">Playstation</option>
                       <option value="Netindo">Netindo</option>
-                    </select>
-                  </div>
-                </div>
+                    </select>  </div>   </div>
                 <div className="form-outline m-2 d-flex justify-content-between">
                   <label className="form-label" htmlFor="form1Example2">
                     Is In Stock ?
@@ -246,8 +220,7 @@ v                  PICTURE
                         name="isinstock"
                         id="No"
                         value={formData.isInStock}
-                        checked={formData.isInStock === false}
-                      />
+                        checked={formData.isInStock === false} />
                       <label className="form-check-label" htmlFor="No">
                         No
                       </label>
@@ -260,16 +233,14 @@ v                  PICTURE
                         name="isinstock"
                         id="Yes"
                         value={formData.isInStock}
-                        checked={formData.isInStock === true}
-                      />
+                        checked={formData.isInStock === true}/>
                       <label className="form-check-label" htmlFor="Yes">
                         Yes
                       </label> </div></div>  </div>
                 <button
                   disabled={updateLoading}
                   type="submit"
-                  className={`btn btn-primary ${updateLoading && "opacity-50"}`}
-                >
+                  className={`btn btn-primary ${updateLoading && "opacity-30"}`}  >
                   Save changes
                 </button>
               </form>
