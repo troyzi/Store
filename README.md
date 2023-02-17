@@ -1,2 +1,4 @@
 # Store
-build-swtore-react
+First PROJECT
+BUILDING A WEB STORE
+GOODLACK
