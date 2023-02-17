@@ -4,6 +4,5 @@ image-added-read
 ![ProductSuccefullEpload](https://user-images.githubusercontent.com/103184916/219519463-12d788d9-84e9-4b14-a530-4e05fe9ef0c5.jpg)
 ![Perfumes](https://user-images.githubusercontent.com/103184916/219519461-e5aa6b9f-8bb4-485d-8dd9-aea149cc4115.jpg)
 
-![Electrical](https://user-images.githubusercontent.com/103184916/219519448-a995086c-6d3f-418c-8e07-18bcf2139067
 ![Pantes](https://user-images.githubusercontent.com/103184916/219519456-cfbfad85-77ea-4492-b9e3-2cea2db18e18.jpg)
 
